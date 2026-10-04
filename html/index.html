@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TourSystem | Destinos Soñados S.A.</title>
+
+    <!-- Bootstrap CSS v5.3.8 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous"/>
+
+    <!-- Font Awesome (iconos por CDN) -->
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+    <!-- CSS propio -->
+    <link rel="stylesheet" href="../css/styles.css" />
+</head>
+<body>
+
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+        <div class="header__container">
+
+            <!-- Logo -->
+            <a href="#" class="header__logo">
+                <i class="fa-solid fa-earth-americas header__logo-icon"></i> <!-- Cambiar a Futuro -->
+                <span class="header__logo-text">TourSystem</span>
+            </a>
+
+            <!-- Navegación -->
+            <nav class="header__nav">
+                <ul class="header__nav-list">
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link header__nav-link--active">
+                            <i class="fa-solid fa-house header__nav-icon"></i>
+                            Inicio
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            <i class="fa-solid fa-map-location-dot header__nav-icon"></i>
+                            Destinos
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            <i class="fa-solid fa-suitcase-rolling header__nav-icon"></i>
+                            Paquetes
+                        </a>
+                    </li>
+                    <li class="header__nav-item">
+                        <a href="#" class="header__nav-link">
+                            <i class="fa-solid fa-envelope header__nav-icon"></i>
+                            Contacto
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Botón CTA -->
+            <a href="#" class="header__cta">Reserva ahora</a>
+
+        </div>
+    </header>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero">
+        <div class="hero__container">
+
+            <!-- Título principal -->
+            <h1 class="hero__title">Descubre el mundo con Destinos Soñados</h1>
+
+            <!-- Subtítulo -->
+            <p class="hero__subtitle">
+                Vive experiencias únicas en los destinos más increíbles del planeta.
+            </p>
+
+            <!-- Botón de acción principal -->
+            <a href="#" class="hero__cta">Explora nuestros destinos</a>
+
+        </div>
+    </section>
+
+    <!-- Bootstrap JS v5.3.8 (necesario para el carrusel) -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"
+    ></script>
+
+    <!-- ===================== FEATURES ===================== -->
+    <section class="features">
+        <div class="features__container">
+
+            <h2 class="features__title">¿Por qué elegirnos?</h2>
+            <p class="features__subtitle">
+                Más de 10 años creando experiencias inolvidables.
+            </p>
+
+            <div class="features__grid">
+
+                <!-- Feature 1 (destacada) -->
+                <article class="feature-card feature-card--featured">
+                    <div class="feature-card__icon">
+                        <i class="fa-solid fa-earth-americas"></i>
+                    </div>
+                    <h3 class="feature-card__title">Destinos únicos</h3>
+                    <p class="feature-card__description">
+                        Explora los rincones más increíbles del mundo con guías expertos.
+                    </p>
+                </article>
+
+                <!-- Feature 2 -->
+                <article class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fa-solid fa-plane"></i>
+                    </div>
+                    <h3 class="feature-card__title">Viajes sin preocupaciones</h3>
+                    <p class="feature-card__description">
+                        Nos encargamos de cada detalle: transporte, alojamiento y actividades.
+                    </p>
+                </article>
+
+                <!-- Feature 3 -->
+                <article class="feature-card">
+                    <div class="feature-card__icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+                    <h3 class="feature-card__title">Soporte 24/7</h3>
+                    <p class="feature-card__description">
+                        Acompañamiento personalizado antes, durante y después de tu viaje.
+                    </p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== DESTINOS DESTACADOS ===================== -->
+    <section class="destinations">
+        <div class="destinations__container">
+
+            <h2 class="destinations__title">Destinos destacados</h2>
+            <p class="destinations__subtitle">
+                Descubre algunos de los lugares más fascinantes que tenemos para ti.
+            </p>
+
+            <div class="destinations__grid">
+
+                <!-- Card 1: Egipto -->
+                <article class="destination-card">
+                    <div id="carouselEgipto" class="carousel slide destination-card__carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/egipto1.jpg" alt="Egipto 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/egipto2.jpg" alt="Egipto 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/egipto3.jpg" alt="Egipto 3" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card__body">
+                        <h3 class="destination-card__title">Egipto</h3>
+                        <p class="destination-card__tagline">Donde todo comienza</p>
+                        <p class="destination-card__description">
+                            Pirámides milenarias, el Nilo y una cultura que enamora.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 2: Cartagena -->
+                <article class="destination-card">
+                    <div id="carouselCartagena" class="carousel slide destination-card__carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/cartagena1.jpg" alt="Cartagena 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/cartagena2.jpg" alt="Cartagena 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/cartagena3.jpg" alt="Cartagena 3" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card__body">
+                        <h3 class="destination-card__title">Cartagena</h3>
+                        <p class="destination-card__tagline">Magia colonial frente al mar</p>
+                        <p class="destination-card__description">
+                            Calles coloridas, historia viva y playas del Caribe colombiano.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 3: Medellín -->
+                <article class="destination-card">
+                    <div id="carouselMedellin" class="carousel slide destination-card__carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/medellin1.jpg" alt="Medellín 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/medellin2.jpg" alt="Medellín 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/medellin3.jpg" alt="Medellín 3" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card__body">
+                        <h3 class="destination-card__title">Medellín</h3>
+                        <p class="destination-card__tagline">La ciudad de la eterna primavera</p>
+                        <p class="destination-card__description">
+                            Innovación, cultura paisa y paisajes de montaña únicos.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 4: París -->
+                <article class="destination-card">
+                    <div id="carouselParis" class="carousel slide destination-card__carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/paris1.jpg" alt="París 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/paris2.jpg" alt="París 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/paris3.jpg" alt="París 3" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card__body">
+                        <h3 class="destination-card__title">París</h3>
+                        <p class="destination-card__tagline">La ciudad del amor</p>
+                        <p class="destination-card__description">
+                            Arte, gastronomía y romance a orillas del Sena.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 5: Tokio -->
+                <article class="destination-card">
+                    <div id="carouselTokio" class="carousel slide destination-card__carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/tokyo1.jpg" alt="Tokio 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/tokyo2.jpg" alt="Tokio 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/tokyo3.jpg" alt="Tokio 3" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card__body">
+                        <h3 class="destination-card__title">Tokio</h3>
+                        <p class="destination-card__tagline">Tradición y futuro en una sola ciudad</p>
+                        <p class="destination-card__description">
+                            Templos ancestrales, tecnología y la mejor gastronomía asiática.
+                        </p>
+                    </div>
+                </article>
+
+                <!-- Card 6: Machu Picchu -->
+                <article class="destination-card">
+                    <div id="carouselMachu" class="carousel slide destination-card__carousel" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="/assets/images/machu1.jpg" alt="Machu Picchu 1" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/machu2.jpg" alt="Machu Picchu 2" class="d-block w-100">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="/assets/images/machu3.jpg" alt="Machu Picchu 3" class="d-block w-100">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="destination-card__body">
+                        <h3 class="destination-card__title">Machu Picchu</h3>
+                        <p class="destination-card__tagline">La ciudad perdida de los Incas</p>
+                        <p class="destination-card__description">
+                            Una maravilla del mundo entre montañas y niebla andina.
+                        </p>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== TESTIMONIALS ===================== -->
+    <section class="testimonials">
+        <div class="testimonials__container">
+
+            <h2 class="testimonials__title">Lo que dicen nuestros viajeros</h2>
+            <p class="testimonials__subtitle">
+                Historias reales de quienes ya vivieron la experiencia Destinos Soñados.
+            </p>
+
+            <div class="testimonials__grid">
+
+                <!-- Testimonio 1 (destacado) -->
+                <article class="testimonial-card testimonial-card--featured">
+                    <p class="testimonial-card__quote">
+                        "El paquete a Cartagena superó todas mis expectativas. La organización fue impecable y los guías conocían cada rincón de la ciudad."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">MG</div>
+                        <div class="testimonial-card__info">
+                            <h3 class="testimonial-card__name">María González</h3>
+                            <p class="testimonial-card__role">Viajera frecuente</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Testimonio 2 -->
+                <article class="testimonial-card">
+                    <p class="testimonial-card__quote">
+                        "Viajé a Egipto con mi familia y fue una experiencia inolvidable. Cada detalle estaba cuidado, desde el transporte hasta las actividades."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">JR</div>
+                        <div class="testimonial-card__info">
+                            <h3 class="testimonial-card__name">Jorge Ramírez</h3>
+                            <p class="testimonial-card__role">Empresario</p>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Testimonio 3 -->
+                <article class="testimonial-card">
+                    <p class="testimonial-card__quote">
+                        "Como fotógrafa de viajes, valoro los destinos únicos. Destinos Soñados me llevó a lugares que jamás imaginé y el soporte fue excelente."
+                    </p>
+                    <div class="testimonial-card__author">
+                        <div class="testimonial-card__avatar">LP</div>
+                        <div class="testimonial-card__info">
+                            <h3 class="testimonial-card__name">Laura Pérez</h3>
+                            <p class="testimonial-card__role">Fotógrafa de viajes</p>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== PRICING ===================== -->
+    <section class="pricing">
+        <div class="pricing__container">
+
+            <h2 class="pricing__title">Nuestros planes</h2>
+            <p class="pricing__subtitle">
+                Elige el plan que mejor se adapte a tu próxima aventura.
+            </p>
+
+            <div class="pricing__grid">
+
+                <!-- Plan 1: Básico -->
+                <article class="pricing-card">
+                    <h3 class="pricing-card__name">Explorador</h3>
+                    <p class="pricing-card__price">
+                        <span class="pricing-card__currency">$</span>299
+                        <span class="pricing-card__period">/ persona</span>
+                    </p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Destino nacional
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Alojamiento 3 estrellas
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Desayuno incluido
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Guía turístico
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-card__cta">Elegir plan</a>
+                </article>
+
+                <!-- Plan 2: Destacado -->
+                <article class="pricing-card pricing-card--featured">
+                    <p class="pricing-card__badge">Recomendado</p>
+                    <h3 class="pricing-card__name">Aventurero</h3>
+                    <p class="pricing-card__price">
+                        <span class="pricing-card__currency">$</span>599
+                        <span class="pricing-card__period">/ persona</span>
+                    </p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Destino internacional
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Alojamiento 4 estrellas
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Media pensión
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Actividades incluidas
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Soporte 24/7
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-card__cta">Elegir plan</a>
+                </article>
+
+                <!-- Plan 3: Premium -->
+                <article class="pricing-card">
+                    <h3 class="pricing-card__name">Premium</h3>
+                    <p class="pricing-card__price">
+                        <span class="pricing-card__currency">$</span>999
+                        <span class="pricing-card__period">/ persona</span>
+                    </p>
+                    <ul class="pricing-card__features">
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Destino internacional
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Alojamiento 5 estrellas
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Todo incluido
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Guía personalizado
+                        </li>
+                        <li class="pricing-card__feature">
+                            <i class="fa-solid fa-check pricing-card__icon"></i>
+                            Transporte premium
+                        </li>
+                    </ul>
+                    <a href="#" class="pricing-card__cta">Elegir plan</a>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===================== CONTACT FORM ===================== -->
+    <section class="contact">
+        <div class="contact__container">
+
+            <h2 class="contact__title">Contáctanos</h2>
+            <p class="contact__subtitle">
+                ¿Listo para tu próxima aventura? Escríbenos y te ayudamos a planearla.
+            </p>
+
+            <form class="contact__form">
+
+                <!-- Campo: Nombre -->
+                <div class="contact__field">
+                    <label for="nombre" class="contact__label">Nombre</label>
+                    <input 
+                        type="text" 
+                        id="nombre" 
+                        name="nombre" 
+                        class="contact__input" 
+                        placeholder="Tu nombre completo" 
+                        required
+                    >
+                </div>
+
+                <!-- Campo: Email -->
+                <div class="contact__field">
+                    <label for="email" class="contact__label">Correo electrónico</label>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        class="contact__input" 
+                        placeholder="tucorreo@ejemplo.com" 
+                        required
+                    >
+                </div>
+
+                <!-- Campo: Mensaje -->
+                <div class="contact__field">
+                    <label for="mensaje" class="contact__label">Mensaje</label>
+                    <textarea 
+                        id="mensaje" 
+                        name="mensaje" 
+                        class="contact__textarea" 
+                        rows="5" 
+                        placeholder="Cuéntanos qué destino te gustaría visitar..." 
+                        required
+                    ></textarea>
+                </div>
+
+                <!-- Botón de envío -->
+                <button type="submit" class="contact__submit">Enviar mensaje</button>
+
+            </form>
+        </div>
+    </section>
+
+        <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+        <div class="footer__container">
+
+            <div class="footer__grid">
+
+                <!-- Columna 1: Logo + descripción -->
+                <div class="footer__column">
+                    <a href="#" class="footer__logo">
+                        <i class="fa-solid fa-earth-americas footer__logo-icon"></i>
+                        <span class="footer__logo-text">TourSystem</span>
+                    </a>
+                    <p class="footer__description">
+                        Destinos Soñados S.A. — Creamos experiencias inolvidables en los destinos más increíbles del mundo.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Enlaces de navegación -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Navegación</h3>
+                        <ul class="footer__list">
+                            <li class="footer__item">
+                                <i class="fa-solid fa-house footer__icon"></i>
+                                <a href="#" class="footer__link">Inicio</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="fa-solid fa-earth-americas footer__icon"></i>
+                                <a href="#" class="footer__link">Destinos</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="fa-solid fa-suitcase-rolling footer__icon"></i>
+                                <a href="#" class="footer__link">Paquetes</a>
+                            </li>
+                            <li class="footer__item">
+                                <i class="fa-solid fa-envelope footer__icon"></i>
+                                <a href="#" class="footer__link">Contacto</a>
+                            </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Información de contacto -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Contacto</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item">
+                            <i class="fa-solid fa-location-dot footer__icon"></i>
+                            <span class="footer__text">Dirección de la empresa</span>
+                        </li>
+                        <li class="footer__item">
+                            <i class="fa-solid fa-phone footer__icon"></i>
+                            <span class="footer__text">+57 000 000 0000</span>
+                        </li>
+                        <li class="footer__item">
+                            <i class="fa-solid fa-envelope footer__icon"></i>
+                            <span class="footer__text">correo@destinossonados.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Redes sociales -->
+                <div class="footer__column">
+                    <h3 class="footer__heading">Síguenos</h3>
+                    <div class="footer__social">
+                        <a href="#" class="footer__social-link">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer__social-link">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Copyright -->
+            <div class="footer__bottom">
+                <p class="footer__copyright">
+                    &copy; 2026 Destinos Soñados S.A. — TourSystem. Todos los derechos reservados.
+                </p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
